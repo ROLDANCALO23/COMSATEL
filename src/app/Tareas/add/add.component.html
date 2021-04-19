@@ -1,0 +1,14 @@
+<form [formGroup]="form" (submit)="enviarData()">
+    <div class="tareas-add">
+        <input
+            type="text"
+            class="tareas-add-input"
+            id="name"
+            required 
+            formControlName="name"
+            name="name"
+        >
+
+        <button  class="tareas-add-button">+Agregar</button>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+
+      <div class="tareas-list-container">
+        <ul class="tareas-list">
+          <div class="tareas-container">
+            
+            <li *ngFor="let tarea of tareas" class="tareas-list-item">
+
+              <div>
+                <input type="checkbox" (change)="fieldsChange($event,tarea.id)"  value="angular" class="tareas-list-check" checked="false">
+              </div>
+                
+                <div>{{tarea.name}}</div>
+              
+                <!--<input type="text" class="tareas-list-text">-->
+                <div class="tareas-buttons" >
+                  <i (click)="Editar(tarea.id)" class="fas fa-edit"></i>
+                  <i (click)="Delete(tarea)" class="fas fa-trash-alt"></i>
+                </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+
+  
+
+
